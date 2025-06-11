@@ -1,10 +1,14 @@
 button {
-  background-color: ______;
-  color: ______;
-  border-radius: ______;
-  transition: ______;
+  background-color: #28a745; /* Um verde vibrante, como o da natureza */
+  color: white; /* Texto branco para contraste */
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  padding: 10px 20px; /* Espaçamento interno para o botão */
+  border: none; /* Sem borda padrão */
+  cursor: pointer; /* Indica que é clicável */
+  font-size: 1em; /* Tamanho da fonte */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
 }
 
 button:hover {
-  ________________: #2980b9;
+  background-color: #218838; /* Um verde um pouco mais escuro ao passar o mouse */
 }
