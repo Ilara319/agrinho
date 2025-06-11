@@ -66,6 +66,7 @@
         .button-container {
             text-align: center;
             margin-top: 30px;
+            margin-bottom: 40px; /* Adiciona espaço abaixo do botão antes do vídeo */
         }
         button {
             background-color: #28a745; /* Um verde vibrante, como o da natureza */
@@ -84,6 +85,27 @@
             background-color: #218838; /* Um verde um pouco mais escuro ao passar o mouse */
             transform: translateY(-2px); /* Efeito de "levitar" levemente */
             box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra mais forte no hover */
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 30px auto; /* Centraliza e adiciona margem */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         .footer {
@@ -133,8 +155,22 @@
             <button>Saiba Mais Sobre Sustentabilidade</button>
         </div>
 
+        <h2>O Meio Ambiente Através dos Anos:</h2>
         <p>
-            Lembre-se: **cada ação conta!** Seja qual for o seu papel, sua contribuição é valiosa. Juntos, podemos fazer a diferença e garantir um planeta vibrante e saudável para todos, hoje e nas futuras gerações.
+            É fundamental compreender como o nosso planeta mudou ao longo do tempo devido às ações humanas. O vídeo a seguir oferece uma perspectiva visual dessas transformações e dos desafios que enfrentamos e superamos.
+        </p>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Y0R-9pLp-W_Y0fF2" 
+                    title="Vídeo sobre Meio Ambiente e Mudanças ao Longo dos Anos" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </div>
+
+
+        <p>
+            Cada ação conta! Seja qual for o seu papel, sua contribuição é valiosa. Juntos, podemos fazer a diferença e garantir um planeta vibrante e saudável para todos, hoje e nas futuras gerações.
         </p>
     </div>
 
