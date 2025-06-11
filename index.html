@@ -6,67 +6,135 @@
     <title>Nosso Planeta, Nosso Futuro</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #e0ffe0; /* Um verde bem suave para o fundo */
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o footer fique no final da página */
+        }
+        .header-image {
+            width: 100%;
+            height: 300px; /* Altura fixa para a imagem de cabeçalho */
+            object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+            filter: brightness(85%); /* Escurece um pouco a imagem para o texto se destacar */
+            display: block;
         }
         .container {
             max-width: 800px;
-            margin: auto;
+            margin: 20px auto; /* Adiciona um pouco de margem acima e abaixo */
             background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 30px 40px; /* Mais preenchimento para um visual mais arejado */
+            border-radius: 10px; /* Bordas um pouco mais arredondadas */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra mais suave e visível */
+            flex-grow: 1; /* Permite que o container ocupe o espaço restante */
         }
         h1 {
             color: #28a745; /* Um verde mais forte para o título */
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            font-size: 2.5em; /* Título maior */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05); /* Sombra leve no texto */
         }
         h2 {
             color: #218838; /* Um verde um pouco mais escuro para subtítulos */
-            margin-top: 30px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #28a745; /* Linha verde abaixo do subtítulo */
+            padding-bottom: 5px;
+            font-size: 1.8em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify; /* Justifica o texto para melhor leitura */
         }
         ul {
-            list-style-type: disc;
+            list-style-type: '🌱 '; /* Ícone de folha para os itens da lista */
             margin-left: 20px;
+            padding-left: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            padding-left: 5px;
         }
+        strong {
+            color: #218838; /* Destaca as palavras-chave em verde */
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        button {
+            background-color: #28a745; /* Um verde vibrante, como o da natureza */
+            color: white; /* Texto branco para contraste */
+            border-radius: 5px; /* Bordas levemente arredondadas */
+            padding: 12px 25px; /* Espaçamento interno maior para o botão */
+            border: none; /* Sem borda padrão */
+            cursor: pointer; /* Indica que é clicável */
+            font-size: 1.1em; /* Tamanho da fonte um pouco maior */
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave e efeito de escala */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra no botão */
+        }
+
+        button:hover {
+            background-color: #218838; /* Um verde um pouco mais escuro ao passar o mouse */
+            transform: translateY(-2px); /* Efeito de "levitar" levemente */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra mais forte no hover */
+        }
+
         .footer {
             text-align: center;
             margin-top: 40px;
+            padding: 20px;
             font-size: 0.9em;
-            color: #666;
+            color: #fff;
+            background-color: #333; /* Fundo escuro para o rodapé */
+            width: 100%;
+        }
+        .image-credit {
+            font-size: 0.8em;
+            color: #888;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
+    <img src="https://images.unsplash.com/photo-1519757657991-628d68962649?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paisagem natural com árvores e grama verde exuberante" class="header-image">
+    <div class="image-credit">
+        Crédito da Imagem: <a href="https://unsplash.com/@anniespratt" target="_blank" style="color: #28a745;">Annie Spratt</a> no Unsplash
+    </div>
+
     <div class="container">
         <h1>Nosso Planeta, Nosso Futuro: Cuidando do Meio Ambiente</h1>
         <p>
-            O meio ambiente é o nosso lar e a base da nossa existência. Ele nos fornece o ar que respiramos, a água que bebemos e os recursos que utilizamos diariamente. No entanto, as ações humanas têm impactado significativamente a saúde do nosso planeta, levando a desafios como as mudanças climáticas, a poluição e a perda de biodiversidade.
+            O <strong>meio ambiente</strong> é o nosso lar e a base da nossa existência. Ele nos fornece o **ar que respiramos**, a **água que bebemos** e os **recursos naturais** que utilizamos diariamente para sobreviver e prosperar. Infelizmente, as ações humanas têm impactado significativamente a saúde do nosso planeta, levando a desafios globais urgentes como as **mudanças climáticas**, a **poluição** em suas diversas formas e a alarmante **perda de biodiversidade**.
         </p>
         <p>
-            Cuidar do meio ambiente é uma responsabilidade de todos nós. Pequenas atitudes no dia a dia podem fazer uma grande diferença na construção de um futuro mais sustentável para as próximas gerações.
+            A **preservação do meio ambiente** não é apenas uma questão para cientistas ou governos; é uma **responsabilidade coletiva** de todos nós. Cada pequena atitude no dia a dia tem o poder de fazer uma grande diferença na construção de um futuro mais **sustentável** e saudável para as próximas gerações e para a vida em nosso planeta.
         </p>
 
-        <h2>Dicas para Proteger o Meio Ambiente:</h2>
+        <h2>Dicas Práticas para Proteger o Meio Ambiente:</h2>
         <ul>
-            <li>**Economize água:** Tome banhos mais curtos, feche a torneira ao escovar os dentes e conserte vazamentos.</li>
-            <li>**Use energia de forma consciente:** Apague as luzes ao sair de um cômodo, use lâmpadas LED e desconecte aparelhos da tomada quando não estiverem em uso.</li>
-            <li>**Reduza, Reuse, Recicle:** Diminua seu consumo, reutilize embalagens e objetos, e separe o lixo para reciclagem.</li>
-            <li>**Opte por transportes sustentáveis:** Caminhe, use bicicleta ou transporte público sempre que possível.</li>
-            <li>**Consuma de forma consciente:** Dê preferência a produtos orgânicos, locais e de empresas que se preocupam com a sustentabilidade.</li>
-            <li>**Plante uma árvore:** Contribua para a arborização e ajude a purificar o ar.</li>
+            <li>**Economize água:** Comece com banhos mais curtos, feche a torneira ao escovar os dentes e verifique regularmente se há vazamentos em casa. Pequenas ações economizam milhões de litros.</li>
+            <li>**Use energia de forma consciente:** Adote o hábito de apagar as luzes ao sair de um cômodo, troque lâmpadas antigas por **LEDs** mais eficientes e desconecte aparelhos eletrônicos da tomada quando não estiverem em uso.</li>
+            <li>**Reduza, Reuse, Recicle (3 Rs):** Este é um pilar fundamental. Diminua seu consumo de produtos descartáveis, encontre novas utilidades para embalagens e objetos, e separe corretamente o lixo para **reciclagem**.</li>
+            <li>**Opte por transportes sustentáveis:** Sempre que possível, escolha **caminhar**, usar a **bicicleta** ou o **transporte público**. Se precisar de carro, considere a carona solidária.</li>
+            <li>**Consuma de forma consciente:** Dê preferência a produtos **orgânicos**, de produtores locais e de empresas que demonstram compromisso real com a **sustentabilidade ambiental**.</li>
+            <li>**Plante uma árvore:** Contribua ativamente para a **arborização** urbana ou rural. Árvores são essenciais para purificar o ar, regular o clima e abrigar a vida selvagem.</li>
         </ul>
 
+        <div class="button-container">
+            <button>Saiba Mais Sobre Sustentabilidade</button>
+        </div>
+
         <p>
-            Cada ação conta! Juntos, podemos fazer a diferença e garantir um planeta saudável para todos.
+            Lembre-se: **cada ação conta!** Seja qual for o seu papel, sua contribuição é valiosa. Juntos, podemos fazer a diferença e garantir um planeta vibrante e saudável para todos, hoje e nas futuras gerações.
         </p>
     </div>
 
